@@ -1,0 +1,23 @@
+/* 初始化样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* 利用伪元素 清除浮动的影响 */
+
+.clr::after {
+    display: block;
+    content: '';
+    clear: both;
+}

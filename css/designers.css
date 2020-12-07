@@ -1,0 +1,88 @@
+.banner {
+    height: 270px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #4d4d4d;
+}
+
+.footer .footer-c.w {
+    color: #ffffff;
+}
+
+.banner img {
+    width: 100%;
+    height: 270px;
+}
+
+.designers {
+    height: 1042px;
+}
+
+.designers .dress-title .title-t {
+    color: #444444;
+}
+
+.designers .line {
+    width: 100%;
+}
+
+.designers .des .j-name {
+    color: #2e2e2e;
+}
+
+.designers .des .j-item,
+.designers .des .j-job {
+    color: #a4a4a4;
+}
+
+
+/* more 按钮边框颜色 */
+
+.designers .des .more {
+    border: 1px solid #b9ab77;
+    margin-bottom: 33px;
+}
+
+
+/* line样式 */
+
+.designers .des .line {
+    width: 300px;
+    height: 2px;
+    background-color: #b9ab77;
+}
+
+
+/* 设计师图片 */
+
+.designers .des {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.designers .des .des-item {
+    float: left;
+    width: 300px;
+    height: 100%;
+    margin-right: 150px;
+}
+
+.designers .des .des-item:last-child {
+    margin-right: 0;
+    background: url(../img/designers-img/des1.jpg) no-repeat top;
+}
+
+.designers .des .des-item:first-child {
+    background: url(../img/designers-img/des2.jpg) no-repeat top;
+}
+
+.designers .des .des-item:nth-child(2) {
+    background: url(../img/designers-img/des3.jpg) no-repeat top;
+}
+
+.designers .jieshao {
+    margin-top: 490px;
+}

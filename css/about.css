@@ -1,0 +1,81 @@
+.banner {
+    height: 270px;
+}
+
+.about {
+    height: 1788px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #4d4d4d;
+}
+
+.footer .footer-c.w {
+    color: #ffffff;
+}
+
+.banner {
+    background: url(../img/about-img/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-c {
+    width: 1080px;
+    margin: 0 auto;
+    padding-top: 0.1px;
+}
+
+
+/* .about 关于我们样式 */
+
+.about .story .story-img {
+    float: left;
+    margin-right: 68px;
+    margin-bottom: 50px;
+}
+
+.about .story .story-des1 {
+    text-indent: 2em;
+}
+
+.about .story .story-des2 {
+    float: left;
+}
+
+.about .story {
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.about .dress-title.t {
+    margin-top: 280px;
+    margin-bottom: 80px;
+}
+
+.about .ver1 {
+    margin-top: 34px;
+    font-size: 26px;
+    color: #373737;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+
+.about .ver2 {
+    color: #616060;
+    margin-bottom: 40px;
+}
+
+.about .address {
+    float: left;
+}
+
+.about .address-b {
+    float: left;
+    width: 216px;
+    color: #616060;
+    line-height: 2;
+    margin-left: 39px;
+    margin-top: 110px;
+}

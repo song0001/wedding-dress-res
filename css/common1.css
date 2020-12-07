@@ -1,0 +1,87 @@
+/* index页面和designers页面设计师公告样式 */
+
+
+/* 设计师 */
+
+.designers .dress-title {
+    margin-bottom: 60px;
+}
+
+.designers .dress-title .title-t {
+    color: #f7f5f5;
+}
+
+.designers .dress-title .title-b {
+    color: #c1c1c1;
+}
+
+.designers .des {
+    width: 1129px;
+    height: 453px;
+    margin: 0 auto;
+}
+
+.designers .des .des-item {
+    float: left;
+    width: 277px;
+    height: 100%;
+    margin-right: 149px;
+}
+
+.designers .des .des-item:last-child {
+    margin-right: 0;
+    background: url(../img/index-img/Woman\ Sitting\ in\ Grey\ Fur\ Sofa.png) no-repeat top;
+}
+
+.designers .des .des-item:first-child {
+    background: url(../img/index-img/Man\ Standing\ on\ Street.png) no-repeat top;
+}
+
+.designers .des .des-item:nth-child(2) {
+    background: url(../img/index-img/Woman\ Standing\ Against\ Flowers.png) no-repeat top;
+}
+
+.designers .jieshao {
+    margin-top: 205px;
+    text-align: center;
+}
+
+.designers .jieshao .j-name {
+    height: 19px;
+    font-size: 24px;
+    color: #f7f5f5;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.designers .jieshao .j-job {
+    height: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #b9b9b9;
+    margin-bottom: 19px;
+}
+
+.designers .jieshao .j-item {
+    height: 33px;
+    font-size: 12px;
+    color: #b9b9b9;
+    margin-bottom: 68px;
+}
+
+.designers .jieshao .j-more {
+    display: block;
+    width: 36px;
+    height: 10px;
+    font-size: 12px;
+    color: #bbbaba;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.designers .jieshao .line {
+    width: 153px;
+    height: 1px;
+    background-color: #bbbaba;
+    margin: 0 auto;
+}

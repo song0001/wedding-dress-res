@@ -1,0 +1,177 @@
+.header {
+    height: 80px;
+}
+
+.banner {
+    height: 270px;
+}
+
+.act {
+    height: 920px;
+}
+
+.footer {
+    height: 100px;
+    background-color: #f7f5f5;
+}
+
+
+/* banner样式 */
+
+.banner {
+    background: url(../img/activities-img/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+
+/* 遮罩层 */
+
+.mask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.banner:hover .mask {
+    display: block;
+}
+
+
+/* 最新活动 */
+
+.act .title {
+    height: 200px;
+    padding: 0.1px;
+}
+
+.act .dress-title {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.act .date {
+    height: 200px;
+    background-color: orange;
+}
+
+.act .page {
+    height: 120px;
+}
+
+.act .date .date-l {
+    float: left;
+    margin-left: 130px;
+}
+
+.act .date .date-r {
+    float: left;
+}
+
+.act .date {
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.act .date.date1 {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+
+/* 右箭头定位的参照父元素 */
+
+.act .date.date1 .date-c {
+    position: relative;
+}
+
+.act .date.date2,
+.act .date.date3 {
+    color: #444444;
+    background-color: #fff;
+    padding-left: 60px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.act .arr-r {
+    position: absolute;
+    right: 230px;
+    top: 50%;
+    transform: translateY( calc(-50% - 25px));
+    width: 14px;
+    height: 26px;
+    background: url(../img/activities-img/arr-r.png);
+}
+
+
+/*最新活动介绍 左边 */
+
+.act .date .date-l .t {
+    font-size: 60px;
+}
+
+.act .date .date-l .b {
+    font-size: 16px;
+    text-align: right;
+}
+
+
+/* 最新活动介绍 右边 */
+
+.act .date .date-r {
+    margin-left: 46px;
+}
+
+.act .date .date-r .t {
+    height: 18px;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.act .date .date-r .b {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* 页码 */
+
+.act .page-c {
+    position: relative;
+}
+
+.act .page1,
+.act .page2 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: solid 1px #c9c9c9;
+}
+
+.act .page1 {
+    position: absolute;
+    left: 565px;
+    top: 29px;
+}
+
+.act .page2 {
+    position: absolute;
+    right: 565px;
+    top: 29px;
+}
+
+
+/* hover页码变色 */
+
+.page1:hover {
+    background-color: #6d6d6d;
+    color: #fefefe;
+}
+
+.page2:hover {
+    background-color: #6d6d6d;
+    color: #fefefe;
+}

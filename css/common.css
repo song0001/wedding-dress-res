@@ -1,0 +1,163 @@
+/* 版心样式 */
+
+.w {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /* 消除嵌套崩塌  有定位最好不用*/
+    overflow: hidden;
+}
+
+
+/* 头部样式 */
+
+.header {
+    width: 100%;
+}
+
+.veronica {
+    width: 177px;
+    float: left;
+    text-align: center;
+    margin-top: 23px;
+    margin-left: 60px;
+}
+
+.header .header-c .nav {
+    float: right;
+}
+
+.nav .nav-item {
+    float: left;
+    /* margin-top: 32px; */
+    line-height: 80px;
+    margin-right: 82px;
+    font-size: 16px;
+}
+
+
+/* a标签的字体 */
+
+.nav .nav-item a {
+    color: #666666;
+}
+
+.nav .nav-item a.shouye {
+    color: #1d1d1d;
+}
+
+.nav .nav-item.m0 {
+    margin-right: 60px;
+}
+
+.nav .nav-item span {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: #b9ab77;
+    margin-top: -25px;
+}
+
+.nav .nav-item:hover span {
+    display: block;
+}
+
+
+/* 小标题类公告样式  最新活动*/
+
+.dress-title {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.dress-title .title-t {
+    font-size: 26px;
+    color: #444444;
+}
+
+.dress-title .title-b {
+    font-size: 16px;
+    color: #c1c1c1;
+}
+
+
+/* 按钮more样式 */
+
+.more {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 45px;
+    font-size: 12px;
+    color: #2d2d2d;
+    width: 150px;
+    height: 45px;
+    border: 1px solid #f5f5f5;
+}
+
+
+/* 底部footer样式 */
+
+.footer .footer-l {
+    float: left;
+    margin-top: 30px;
+    height: 12px;
+    font-size: 12px;
+}
+
+.footer .footer-l .footer-t {
+    margin-bottom: 12px;
+}
+
+.footer-c {
+    position: relative;
+    color: #323232;
+}
+
+.footer .footer-r {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.footer .footer-r .footer-item {
+    float: left;
+    height: 10px;
+    line-height: 10px;
+    font-size: 12px;
+    margin-right: 61px;
+}
+
+.footer .footer-r .footer-item:last-child {
+    float: left;
+    margin-right: 0;
+}
+
+
+/* 底部箭头样式  适用于dress和jew两个页面*/
+
+.arr {
+    width: 32px;
+    height: 50px;
+    position: absolute;
+    opacity: 0.58;
+}
+
+.arr.arr-l {
+    left: -50px;
+    top: 256px;
+    background: url(../img/index-img/arr-l.png) no-repeat center;
+    background-color: #8a8a8a;
+}
+
+.arr.arr-r {
+    right: -50px;
+    top: 256px;
+    background: url(../img/index-img/arr-r.png) no-repeat center;
+    background-color: #8a8a8a;
+}

@@ -1,0 +1,379 @@
+/* 各板块高度 */
+
+.header {
+    height: 80px;
+}
+
+.banner {
+    height: 720px;
+}
+
+.dress {
+    height: 828px;
+}
+
+.jew {
+    height: 556px;
+    background-color: rgba(77, 77, 77, 0.03);
+}
+
+.activities {
+    height: 876px;
+}
+
+.designers {
+    height: 664px;
+    background-color: #4d4d4d;
+}
+
+.footer {
+    height: 100px;
+    background-color: #ffffff;
+}
+
+
+/* banner样式 */
+
+.banner {
+    width: 100%;
+    height: 720px;
+    background: url(../img/index-img/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.banner-c {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* 箭头样式 */
+
+.banner .banner-c .arr {
+    width: 50px;
+    height: 79px;
+    position: absolute;
+    opacity: 0.58;
+}
+
+.banner .banner-c .arr.arr-l {
+    left: -50px;
+    top: 316px;
+    background: url(../img/index-img/arr-l.png) no-repeat center;
+    background-color: #8a8a8a;
+}
+
+.banner .arr.arr-r {
+    right: -50px;
+    top: 316px;
+    background: url(../img/index-img/arr-r.png) no-repeat center;
+    background-color: #8a8a8a;
+}
+
+.banner-more {
+    width: 216px;
+    height: 61px;
+    position: absolute;
+    top: 439px;
+    right: 60px;
+    background: url(../img/index-img/矩形\ 2.png) no-repeat center;
+}
+
+.banner .dot {
+    position: absolute;
+    left: 50%;
+    bottom: 21px;
+    width: 49px;
+    height: 18px;
+    margin-left: -25px;
+}
+
+.banner .dot .dot-item {
+    float: left;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 5px solid rgb(220, 221, 226);
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #6c6c6c;
+    opacity: 0.27;
+}
+
+.banner .dot .dot-item:hover {
+    border: 5px solid #6c6c6c;
+    background-color: #fff;
+}
+
+.banner .zhiding {
+    position: absolute;
+    right: 0;
+    bottom: 52px;
+    width: 52px;
+    height: 52px;
+    background: url(../img/index-img/zhiding.png) no-repeat center;
+}
+
+.banner .lianxi {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 52px;
+    height: 52px;
+    background: url(../img/index-img/lianxi.png) no-repeat center;
+    background-size: cover;
+}
+
+
+/* 婚纱礼服样式 */
+
+.dress .dress-title {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.dress .dress-title .title-t {
+    font-size: 26px;
+    color: #444444;
+}
+
+.dress .dress-title .title-b {
+    font-size: 16px;
+    color: #c1c1c1;
+}
+
+.dress .nav {
+    margin: 0 auto;
+    width: fit-content;
+    height: 16px;
+    margin-bottom: 56px;
+}
+
+.dress .nav-item {
+    line-height: 16px;
+}
+
+
+/* 最后一个没有右边距 */
+
+.dress .nav-item:last-child {
+    margin-right: 0;
+}
+
+
+/* 鼠标hover字体变色 */
+
+.dress .nav-item:hover a {
+    color: #b9ab77;
+}
+
+
+/* 婚纱图片样式 */
+
+.dress .dre {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 60px;
+}
+
+.dress .dre .dre-item {
+    float: left;
+    width: 270px;
+    height: 100%;
+    margin-right: 40px;
+    /* background-color: red; */
+}
+
+.dress .dre .dre-item:first-child {
+    background: url(../img/index-img/wedding1.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item:nth-child(2) {
+    background: url(../img/index-img/wedding2.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item:nth-child(3) {
+    background: url(../img/index-img/wedding3.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item:last-child {
+    margin-right: 0;
+    background: url(../img/index-img/wedding4.jpg) no-repeat center;
+}
+
+
+/* 珠宝配饰 */
+
+.jew-c {
+    /* 消除嵌套崩塌 */
+    overflow: hidden;
+}
+
+
+/* 珠宝图片样式 */
+
+.jew .jews {
+    width: fit-content;
+    height: 180px;
+    margin-bottom: 60px;
+}
+
+.jew .jews .jew-item {
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 100%;
+    margin-right: 39px;
+    /* background-color: red; */
+}
+
+.jew .jew-c .dress-title {
+    /* 此间距和第一个不一样 单独设置 添加一个类名权重更高*/
+    margin-bottom: 60px;
+}
+
+.jew .jews .jew-item:first-child {
+    background: url(../img/index-img/jew1.jpg) no-repeat center;
+}
+
+.jew .jews .jew-item:nth-child(2) {
+    background: url(../img/index-img/jew2.jpg) no-repeat center;
+}
+
+.jew .jews .jew-item:nth-child(3) {
+    background: url(../img/index-img/jew3.jpg) no-repeat center;
+}
+
+.jew .jews .jew-item:last-child {
+    margin-right: 0;
+    background: url(../img/index-img/jew4.jpg) no-repeat center;
+}
+
+
+/* 遮罩层样式 */
+
+.jew .mask .mask-t {
+    font-size: 14px;
+    height: 15px;
+    line-height: 15px;
+    color: #ffffff;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.jew .mask .mask-b {
+    height: 13px;
+    font-size: 12px;
+    line-height: 13px;
+    color: #c1c1c1;
+}
+
+.jew .mask {
+    display: none;
+    text-indent: 17px;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.jew .jew-item:hover .mask {
+    display: block;
+}
+
+
+/* 最新活动 */
+
+.activities .dress-title {
+    /* 此间距和第一个不一样 单独设置 */
+    margin-bottom: 60px;
+}
+
+.activities {
+    background: url(../img/index-img/flower.jpg) no-repeat center;
+    background-size: 100% 354px;
+    background-position: 0 208px;
+}
+
+.activities ul {
+    width: fit-content;
+    height: 335px;
+    margin: 0 auto;
+    margin-top: 235px;
+    /* 距离下面more按钮的距离 */
+    margin-bottom: 59px;
+}
+
+.activities ul li {
+    float: left;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.activities .info {
+    width: 100%;
+}
+
+.activities .date {
+    text-align: center;
+    font-size: 11px;
+    color: #1c1c1c;
+    width: fit-content;
+    margin-left: 43px;
+    margin-bottom: 48px;
+}
+
+.activities .info .month {
+    display: inline-block;
+    width: fit-content;
+    height: 23px;
+    font-size: 30px;
+    line-height: 23px;
+    color: #8b8b8b;
+    margin-top: 44px;
+}
+
+.activities .info .year {
+    display: inline-block;
+    width: 31px;
+    height: 12px;
+    font-size: 14px;
+    color: #8b8b8b;
+    line-height: 12px;
+    margin-left: 15px;
+}
+
+.activities .info .confe {
+    width: fit-content;
+    height: 16px;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 43px;
+    margin-bottom: 21px;
+}
+
+.activities .info .desc {
+    width: fit-content;
+    height: 35px;
+    line-height: 2;
+    font-size: 13px;
+    color: #8b8b8b;
+    margin-left: 43px;
+    margin-bottom: 59px;
+}
+
+.activities .info .mores {
+    height: 9px;
+    font-size: 14px;
+    line-height: 9px;
+    color: #bebebe;
+    margin-left: 43px;
+}

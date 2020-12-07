@@ -1,0 +1,127 @@
+.header {
+    height: 100px;
+}
+
+.content {
+    height: 1339px;
+}
+
+.jew {
+    height: 472px;
+    background-color: #dddddd;
+}
+
+.footer {
+    height: 100px;
+    background-color: #4d4d4d;
+}
+
+.footer .footer-c.w {
+    color: #ffffff;
+}
+
+
+/* 内容区样式 */
+
+.content .box1 {
+    height: 473px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.content .box1 .title {
+    margin-bottom: 43px;
+}
+
+.content .box1 .box1-r {
+    width: 491px;
+}
+
+.content .box2 {
+    height: 736px;
+}
+
+
+/* 珠宝配饰样式 */
+
+.jew .jew-c {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 0.1px;
+    position: relative;
+}
+
+.jew .sort {
+    width: 200px;
+    height: 30px;
+    margin-top: 100px;
+}
+
+.jew .sort .sort-item {
+    float: left;
+    width: 40px;
+    height: 100%;
+    line-height: 30px;
+    margin-right: 40px;
+    font-size: 12px;
+    color: #929292;
+    text-align: center;
+    background-color: #f7f5f5;
+}
+
+.jew .sort .sort-item:last-child {
+    margin-right: 0;
+}
+
+.jew .jew-c .more {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -76px;
+    border: solid 1px #bbbaba;
+}
+
+
+/* 底部箭头调整位置 */
+
+.jew .arr {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+
+
+/* 珠宝图片样式 */
+
+.jew .jews {
+    margin-top: 40px;
+}
+
+.jew .jews .jew-item {
+    width: 208px;
+    height: 137px;
+    margin-right: 40px;
+    float: left;
+}
+
+.jew .jews .jew-item:first-child {
+    background: url(../img/jew-img/jew1.png)no-repeat center;
+}
+
+.jew .jews .jew-item:nth-child(2) {
+    background: url(../img/jew-img/jew2.png)no-repeat center;
+}
+
+.jew .jews .jew-item:nth-child(3) {
+    background: url(../img/jew-img/jew3.png)no-repeat center;
+}
+
+.jew .jews .jew-item:nth-child(4) {
+    background: url(../img/jew-img/jew4.png)no-repeat center;
+}
+
+.jew .jews .jew-item:last-child {
+    margin-right: 0;
+    background: url(../img/jew-img/jew5.png)no-repeat center;
+}
