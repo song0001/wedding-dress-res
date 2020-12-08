@@ -85,3 +85,15 @@
     background-color: #bbbaba;
     margin: 0 auto;
 }
+
+
+/* 响应式 */
+
+@media (max-width:768px) {
+    .dress-title .title-t {
+        font-size: 20px;
+    }
+    .dress-title .title-b {
+        font-size: 13px;
+    }
+}

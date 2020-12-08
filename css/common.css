@@ -2,7 +2,7 @@
 
 .w {
     width: 1200px;
-    height: 100%;
+    /* height: 100%; */
     margin: 0 auto;
     /* 消除嵌套崩塌  有定位最好不用*/
     overflow: hidden;
@@ -13,6 +13,15 @@
 
 .header {
     width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 9;
+}
+
+.header-m {
+    display: none;
 }
 
 .veronica {
@@ -33,6 +42,10 @@
     line-height: 80px;
     margin-right: 82px;
     font-size: 16px;
+}
+
+.box {
+    display: none;
 }
 
 
@@ -101,6 +114,10 @@
 
 /* 底部footer样式 */
 
+.footer-c {
+    height: 100%;
+}
+
 .footer .footer-l {
     float: left;
     margin-top: 30px;
@@ -160,4 +177,132 @@
     top: 256px;
     background: url(../img/index-img/arr-r.png) no-repeat center;
     background-color: #8a8a8a;
+}
+
+
+/* 响应式 */
+
+@media (max-width:768px) {
+    .header {
+        display: none;
+    }
+    .header-m {
+        display: block;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background-color: #fff;
+    }
+    .w {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* .banner {
+        margin-top: 80px;
+    } */
+    .banner .arr {
+        display: none;
+    }
+    .veronica {
+        width: 89px;
+        margin-left: 0;
+        /* margin-top: 0; */
+        z-index: 9;
+    }
+    .veronica img {
+        width: 100%;
+        height: auto;
+    }
+    .veronica p {
+        /* width: 24px; */
+        font-size: 12px;
+        transform: scale(.7);
+    }
+    .header-m .header-c {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+    .header-m .nav {
+        height: calc(100vh - 80px) !important;
+        display: flex;
+        top: 80px;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.3);
+        position: fixed;
+        justify-content: space-between;
+        flex-direction: column;
+        display: none;
+        z-index: 10;
+    }
+    .header-m .nav .nav-item:first-child {
+        padding-top: 120px;
+    }
+    .header-m .nav .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    .header-m .nav .nav-item a {
+        color: #000;
+    }
+    .nav .nav-item:hover span {
+        display: none;
+    }
+    .box {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .box .line {
+        width: 20px;
+        height: 2px;
+        background-color: #3D3D3D;
+        margin: 5px auto 0;
+        transition: .3s linear;
+    }
+    .box .line:nth-child(1) {
+        margin-top: 13px;
+    }
+    .active .line:nth-child(1) {
+        transform: translateY(7px);
+    }
+    .active .line:nth-child(2) {
+        width: 0;
+    }
+    .active .line:nth-child(3) {
+        transform: translateY(-7px) rotate(90deg);
+    }
+    .active {
+        transform: rotate(45deg);
+        transition-delay: .3s;
+    }
+    .close .line {
+        transition: .3s linear;
+    }
+    /* 模糊 */
+    .filter.content-filter {
+        filter: blur(10px);
+    }
+    .footer .footer-l {
+        float: none;
+    }
+    .footer .footer-l .footer-t,
+    .footer .footer-l .footer-b {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer .footer-r {
+        text-align: center;
+        top: 68%;
+        left: 50%;
+        width: fit-content;
+        transform: translateX(-50%);
+        margin: 0 auto;
+    }
+    .footer .footer-r .footer-item {
+        margin-right: 10px;
+    }
 }

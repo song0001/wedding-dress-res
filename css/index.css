@@ -5,7 +5,8 @@
 }
 
 .banner {
-    height: 720px;
+    width: 100%;
+    /* height: 720px; */
 }
 
 .dress {
@@ -34,11 +35,19 @@
 
 /* banner样式 */
 
-.banner {
+
+/* .banner .swiper-wrapper {
+    width: 200%;
+    height: 100%;
+}
+
+.banner .swiper-wrapper .swiper-slide {
+    width: 50%;
+} */
+
+.banner .swiper-wrapper img {
     width: 100%;
-    height: 720px;
-    background: url(../img/index-img/banner1.jpg) no-repeat center;
-    background-size: cover;
+    height: 100%;
 }
 
 .banner-c {
@@ -51,33 +60,39 @@
 
 /* 箭头样式 */
 
-.banner .banner-c .arr {
+.banner .arr {
     width: 50px;
     height: 79px;
     position: absolute;
     opacity: 0.58;
 }
 
-.banner .banner-c .arr.arr-l {
-    left: -50px;
-    top: 316px;
+.banner .arr.arr-l {
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
     background: url(../img/index-img/arr-l.png) no-repeat center;
     background-color: #8a8a8a;
 }
 
 .banner .arr.arr-r {
-    right: -50px;
-    top: 316px;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
     background: url(../img/index-img/arr-r.png) no-repeat center;
     background-color: #8a8a8a;
+}
+
+.banner .arr:hover {
+    opacity: 1;
 }
 
 .banner-more {
     width: 216px;
     height: 61px;
     position: absolute;
-    top: 439px;
-    right: 60px;
+    top: 50%;
+    right: 30%;
     background: url(../img/index-img/矩形\ 2.png) no-repeat center;
 }
 
@@ -219,15 +234,15 @@
 
 .jew .jews {
     width: fit-content;
-    height: 180px;
     margin-bottom: 60px;
+    overflow: hidden;
 }
 
 .jew .jews .jew-item {
     position: relative;
     float: left;
     width: 270px;
-    height: 100%;
+    height: 180px;
     margin-right: 39px;
     /* background-color: red; */
 }
@@ -239,19 +254,23 @@
 
 .jew .jews .jew-item:first-child {
     background: url(../img/index-img/jew1.jpg) no-repeat center;
+    /* background-size: cover; */
 }
 
 .jew .jews .jew-item:nth-child(2) {
     background: url(../img/index-img/jew2.jpg) no-repeat center;
+    /* background-size: cover; */
 }
 
 .jew .jews .jew-item:nth-child(3) {
     background: url(../img/index-img/jew3.jpg) no-repeat center;
+    /* background-size: cover; */
 }
 
 .jew .jews .jew-item:last-child {
     margin-right: 0;
     background: url(../img/index-img/jew4.jpg) no-repeat center;
+    /* background-size: cover; */
 }
 
 
@@ -376,4 +395,120 @@
     line-height: 9px;
     color: #bebebe;
     margin-left: 43px;
+}
+
+.activities ul img {
+    width: 100%;
+    height: 100%;
+}
+
+.activities ul li:hover img {
+    display: none;
+}
+
+.activities ul li .info {
+    display: none;
+}
+
+.activities ul li:hover .info {
+    display: block;
+}
+
+
+/* 响应式 */
+
+@media (max-width:768px) {
+    .swiper-slide img {
+        width: 100%;
+    }
+    .banner {
+        height: auto;
+    }
+    .dress {
+        height: auto;
+    }
+    .jew {
+        height: auto;
+    }
+    .dress .dress-title .title-t {
+        font-size: 20px;
+    }
+    .dress .dress-title .title-b {
+        font-size: 13px;
+    }
+    .dress .nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav .nav-item {
+        margin-right: 0;
+        font-size: 13px;
+    }
+    .dress .dre .dre-item {
+        width: 48%;
+        height: 270px;
+    }
+    .dress .dre .dre-item:nth-child(2) {
+        margin-right: 0;
+    }
+    .dress .dre .dre-item:nth-child(2n+1) {
+        margin-right: 10px;
+    }
+    .jew .jews {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.1px;
+        /* overflow: hidden; */
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+    .jew .jews .jew-item {
+        width: 100%;
+        margin-right: 0;
+        display: inline-block;
+    }
+    .jew .more {
+        margin: 50px auto;
+        border: 1px solid #b9ab77;
+    }
+    .dress-title {
+        margin-top: 60px;
+    }
+    .activities {
+        height: auto;
+        background-size: cover;
+        background-position: 0 163px;
+    }
+    .activities .activities-c {
+        width: 100%;
+    }
+    .activities ul {
+        width: 200%;
+        margin: 0;
+        height: 270px;
+    }
+    .activities ul li {
+        width: 25%;
+    }
+    .activities .more {
+        margin: 30px auto;
+    }
+    .activities ul img {
+        height: 100%;
+    }
+    .activities ul img {
+        margin-right: 0;
+    }
+    .designers {
+        height: auto;
+    }
+    .designers .des {
+        width: 100%;
+    }
+    .designers .des .des-item {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

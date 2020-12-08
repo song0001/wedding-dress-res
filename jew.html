@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/dress.css">
     <link rel="stylesheet" href="css/jew.css">
-
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.1/jquery.js"></script>
+    <script src="js/common.js"></script>
 </head>
 
 <body>
@@ -44,74 +45,118 @@
             </ul>
         </div>
     </div>
+    <!-- 移动端头部 -->
+    <div class="header-m">
+        <div class="header-c w">
+            <div class="veronica">
+                <img src="img/index-img/VERONICA.png" alt="">
+                <p class="date">1820-2018</p>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="index.html">首页</a>
+                    <span></span>
+                </li>
+                <li class="nav-item">
+                    <a href="dress.html">婚纱礼服</a>
+                    <span></span>
+                </li>
+                <li class="nav-item">
+                    <a href="jew.html">珠宝配饰</a>
+                    <span></span>
+                </li>
+                <li class="nav-item">
+                    <a href="activities.html">最新活动</a>
+                    <span></span>
+                </li>
+                <li class="nav-item m0">
+                    <a href="about.html">关于我们</a>
+                    <span></span>
+                </li>
+            </ul>
+            <!-- 移动端header汉堡包 -->
+            <div class="box">
+                <div class="line">
 
-    <!-- 内容区 -->
-    <div class="content">
-        <div class="content-c w">
-            <div class="box1">
-                <img src="img/jew-img/jew-1.png" alt="">
-                <div class="box1-r">
-                    <!-- 右边竖线加上title标题部分 -->
-                    <div class="title clr">
-                        <div class="line"></div>
-                        <div class="dress-name">
-                            <p class="t">HardWear系列 </p>
-                            <p class="b">对戒，耳饰</p>
-                            <p class="price">$23199.00</p>
+                </div>
+                <div class="line">
+
+                </div>
+                <div class="line">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-filter">
+        <!-- 内容区 -->
+        <div class="content">
+            <div class="content-c w">
+                <div class="box1">
+                    <img src="img/jew-img/jew-1.png" alt="">
+                    <div class="box1-r">
+                        <!-- 右边竖线加上title标题部分 -->
+                        <div class="title clr">
+                            <div class="line"></div>
+                            <div class="dress-name">
+                                <p class="t">HardWear系列 </p>
+                                <p class="b">对戒，耳饰</p>
+                                <p class="price">$23199.00</p>
+                            </div>
                         </div>
+
+                        <p class="des">18K白金镶圆形明亮式切割钻石；钻石总重5.99克拉；直径 12毫米；舒适设计，易于佩戴。
+                        </p>
+                        <a class="bt" href="">立即预约</a>
+                        <div class="line-b"></div>
                     </div>
-
-                    <p class="des">18K白金镶圆形明亮式切割钻石；钻石总重5.99克拉；直径 12毫米；舒适设计，易于佩戴。
+                </div>
+                <div class="box2">
+                    <img src="img/jew-img/jew-2.png" alt="">
+                    <p>Veronica HardWear系列优雅与颠覆精神并存，敏感捕捉到漫步纽约的时尚女性的精髓与能量。璀璨的钻石，更加 <br> 凸显这枚戒指的女性魅力。
                     </p>
-                    <a class="bt" href="">立即预约</a>
-                    <div class="line-b"></div>
-                </div>
-            </div>
-            <div class="box2">
-                <img src="img/jew-img/jew-2.png" alt="">
-                <p>Veronica HardWear系列优雅与颠覆精神并存，敏感捕捉到漫步纽约的时尚女性的精髓与能量。璀璨的钻石，更加 <br> 凸显这枚戒指的女性魅力。
-                </p>
-                <div class="size">
-                    钻戒：$1999.00 <br> 耳饰：$3899.00
+                    <div class="size">
+                        钻戒：$1999.00 <br> 耳饰：$3899.00
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- 珠宝配饰 -->
-    <div class="jew">
-        <div class="jew-c clr">
+        <!-- 珠宝配饰 -->
+        <div class="jew">
+            <div class="jew-c clr">
 
-            <ul class="sort ">
-                <li class="sort-item">戒指</li>
-                <li class="sort-item">项链</li>
-                <li class="sort-item">其他</li>
-            </ul>
-            <ul class="jews clr">
-                <li class="jew-item"></li>
-                <li class="jew-item"></li>
-                <li class="jew-item"></li>
-                <li class="jew-item"></li>
-                <li class="jew-item"></li>
-            </ul>
-            <a class="arr arr-l" href=""> </a>
-            <a class="arr arr-r" href=""> </a>
-            <a class="more" href="">MORE</a>
+                <ul class="sort ">
+                    <li class="sort-item">戒指</li>
+                    <li class="sort-item">项链</li>
+                    <li class="sort-item">其他</li>
+                </ul>
+                <ul class="jews clr">
+                    <li class="jew-item"></li>
+                    <li class="jew-item"></li>
+                    <li class="jew-item"></li>
+                    <li class="jew-item"></li>
+                    <li class="jew-item"></li>
+                </ul>
+                <a class="arr arr-l" href=""> </a>
+                <a class="arr arr-r" href=""> </a>
+                <a class="more" href="">MORE</a>
 
-        </div>
-    </div>
-    <!-- 底部 加入我们 -->
-    <div class="footer">
-        <div class="footer-c w">
-            <div class="footer-l ">
-                <p class="footer-t">网站备案号：豫ICP备110121210号</p>
-                <p class="footer-b">增值电信业务经营许可证号：豫B2-20100033</p>
             </div>
-            <ul class="footer-r ">
-                <li class="footer-item"> &copy;2018 VERONICA</li>
-                <li class="footer-item">联系我们</li>
-                <li class="footer-item">加入我们</li>
-            </ul>
+        </div>
+        <!-- 底部 加入我们 -->
+        <div class="footer">
+            <div class="footer-c w">
+                <div class="footer-l ">
+                    <p class="footer-t">网站备案号：豫ICP备110121210号</p>
+                    <p class="footer-b">增值电信业务经营许可证号：豫B2-20100033</p>
+                </div>
+                <ul class="footer-r ">
+                    <li class="footer-item"> &copy;2018 VERONICA</li>
+                    <li class="footer-item">联系我们</li>
+                    <li class="footer-item">加入我们</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>

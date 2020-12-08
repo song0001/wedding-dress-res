@@ -1,5 +1,6 @@
 .banner {
     height: 270px;
+    /* margin-top: 80px; */
 }
 
 .footer {
@@ -85,4 +86,33 @@
 
 .designers .jieshao {
     margin-top: 490px;
+}
+
+@media (max-width:768px) {
+    .banner {
+        height: 150px;
+    }
+    .banner img {
+        height: 150px;
+    }
+    .designers {
+        height: auto;
+    }
+    .dress-title {
+        margin-top: 50px;
+    }
+    .designers .des {
+        display: flex;
+        flex-direction: column;
+    }
+    .designers .des {
+        width: 100%;
+    }
+    .designers .des .des-item {
+        width: 100%;
+    }
+    .designers .des .line {
+        height: 1px;
+        margin-bottom: 50px;
+    }
 }

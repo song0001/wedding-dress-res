@@ -1,5 +1,6 @@
 .banner {
     height: 270px;
+    /* margin-top: 80px; */
 }
 
 .about {
@@ -78,4 +79,44 @@
     line-height: 2;
     margin-left: 39px;
     margin-top: 110px;
+}
+
+
+/* 响应式 */
+
+@media (max-width:768px) {
+    .about {
+        height: 2100px;
+    }
+    .about-c {
+        width: 100%;
+    }
+    .about-c img {
+        width: 100%;
+    }
+    .banner {
+        height: 150px;
+    }
+    .dress-title {
+        margin-top: 50px;
+    }
+    .about .story .story-img {
+        margin-right: 0;
+    }
+    .about .story p {
+        padding: 0 10px;
+    }
+    .about .ver1 {
+        font-size: 20px;
+    }
+    .about .ver2 {
+        font-size: 16px;
+        text-indent: 2em;
+    }
+    .about .address-b {
+        margin-top: 25px;
+    }
+    .about .story {
+        height: auto;
+    }
 }

@@ -4,6 +4,7 @@
 
 .content {
     height: 1976px;
+    /* margin-top: 80px; */
 }
 
 .dress {
@@ -110,6 +111,7 @@
 
 .content .box2 p {
     margin-top: 60px;
+    width: 60%;
     height: 64px;
     font-size: 14px;
     color: #6a6a6a;
@@ -209,4 +211,89 @@
     left: 50%;
     margin-left: -76px;
     margin-bottom: 60px;
+}
+
+
+/* 响应式 */
+
+@media (max-width:768px) {
+    .header-m {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-m .header-c {
+        height: 100%;
+    }
+    .dress-c {
+        width: 90%;
+        overflow: hidden;
+    }
+    .dress .arr {
+        display: none;
+    }
+    .content {
+        height: auto;
+        margin-top: 10px;
+    }
+    .content .box1 {
+        margin-top: 0;
+        height: auto;
+    }
+    .content .box1 img,
+    .content .box2 img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    .content .box1 .box1-r {
+        width: 100%;
+        float: none;
+    }
+    .content .box1-r .line {
+        display: none;
+    }
+    .content .dress-name .b,
+    .content .dress-name .price,
+    .content .dress-name .type {
+        text-align: center;
+    }
+    .content .title .dress-name {
+        width: 100%;
+        text-align: center;
+    }
+    .content .box1-r .des {
+        margin: 0 auto;
+    }
+    .content .box2 p {
+        height: auto;
+        width: 100%;
+    }
+    .content .box2 .size {
+        text-align: center;
+    }
+    /* 婚纱展示 */
+    .dress {
+        height: 450px;
+    }
+    .dress .old,
+    .dress .new {
+        top: 40px;
+    }
+    .dress .dre {
+        position: relative;
+        top: 95px;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        width: 300%;
+        float: left;
+    }
+    .dress .dre .dre-item {
+        height: 200px;
+        margin-right: 0;
+        width: 40%;
+    }
 }

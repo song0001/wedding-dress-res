@@ -4,6 +4,7 @@
 
 .banner {
     height: 270px;
+    /* margin-top: 80px; */
 }
 
 .act {
@@ -139,6 +140,7 @@
 
 .act .page-c {
     position: relative;
+    height: 100%;
 }
 
 .act .page1,
@@ -174,4 +176,55 @@
 .page2:hover {
     background-color: #6d6d6d;
     color: #fefefe;
+}
+
+
+/* 响应式 */
+
+@media (max-width:768px) {
+    .banner {
+        height: 100px;
+    }
+    .act .dress-title {
+        margin-top: 50px;
+    }
+    .act .date .date-l {
+        padding-left: 0;
+        margin-left: 0;
+        color: #929292
+    }
+    .act .date .date-l .t {
+        font-size: 20px;
+    }
+    .act .date .date-r .t {
+        font-size: 16px;
+        margin-left: 40px;
+    }
+    .act .arr-r {
+        display: none;
+    }
+    .act .date .date-r {
+        float: none;
+    }
+    .act .date {
+        padding-top: 10px;
+    }
+    .act .date .date-r .b {
+        margin-top: 43px;
+    }
+    .act .date.date2,
+    .act .date.date3 {
+        padding-left: 0;
+    }
+    .act .page-c {
+        width: 64px;
+    }
+    .act .page1 {
+        /* position: relative; */
+        /* left: 50%; */
+    }
+    .act .page2 {
+        /* position: relative; */
+        /* left: 55%; */
+    }
 }

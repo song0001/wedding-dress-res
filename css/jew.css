@@ -4,6 +4,7 @@
 
 .content {
     height: 1339px;
+    margin-top: 80px;
 }
 
 .jew {
@@ -124,4 +125,86 @@
 .jew .jews .jew-item:last-child {
     margin-right: 0;
     background: url(../img/jew-img/jew5.png)no-repeat center;
+}
+
+
+/* 响应式 */
+
+@media (max-width:768px) {
+    .header .header-m {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header .header-c {
+        height: 100%;
+    }
+    .jew .jew-c {
+        width: 100%;
+    }
+    .jew .arr {
+        display: none;
+    }
+    .content {
+        height: auto;
+        margin-top: 10px;
+    }
+    .content .box1 {
+        margin-top: 0;
+        height: auto;
+    }
+    .content .box2 {
+        height: auto;
+    }
+    .content .box1 img,
+    .content .box2 img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    .content .box1 .box1-r {
+        width: 100%;
+        float: none;
+    }
+    .content .box1-r .line {
+        display: none;
+    }
+    .content .dress-name .b,
+    .content .dress-name .price,
+    .content .dress-name .type {
+        text-align: center;
+    }
+    .content .title .dress-name {
+        width: 100%;
+        text-align: center;
+    }
+    .content .box1-r .des {
+        margin: 0 auto;
+    }
+    .content .box2 p {
+        height: auto;
+        width: 100%;
+    }
+    .content .box2 .size {
+        text-align: center;
+    }
+    .jew {
+        height: auto;
+        overflow: hidden;
+    }
+    .jew .sort {
+        margin-top: 50px;
+    }
+    .jew .jews {
+        width: 300%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .jew .jew-c .more {
+        position: relative;
+        bottom: 30px;
+        margin-top: 50px;
+    }
 }
