@@ -108,7 +108,7 @@
     color: #2d2d2d;
     width: 150px;
     height: 45px;
-    border: 1px solid #f5f5f5;
+    border: 1px solid #b9ab77
 }
 
 
@@ -163,6 +163,7 @@
     height: 50px;
     position: absolute;
     opacity: 0.58;
+    z-index: 3;
 }
 
 .arr.arr-l {

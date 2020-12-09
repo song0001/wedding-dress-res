@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/common1.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.1/jquery.js"></script>
-    <script src="js/common.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
-    </script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
 </head>
 
 <body>
@@ -97,58 +98,83 @@
 
 
         <!-- banner -->
-        <div class="banner">
+        <div class="banner swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="img/index-img/banner1.jpg" alt=""></div>
-                <!-- <div class="swiper-slide"></div> -->
-                <a class="arr arr-l" href="#"> </a>
-                <a class="arr arr-r" href="#"> </a>
-                <!-- <div class="banner-more"> -->
-                <div class="dot">
-                    <span class="dot-item"></span>
-                    <span class="dot-item d0"></span>
-                </div>
-                <a class="zhiding" href=""></a>
-                <a class="lianxi" href=""></a>
+                <div class="swiper-slide"><img src="http://www.bufantec.com/site/hunsha/static/img/banner2.jpg" alt=""></div>
             </div>
+            <a class="arr arr-l swiper-button-prev" href="#"> </a>
+            <a class="arr arr-r swiper-button-next" href="#"> </a>
+            <!-- <div class="banner-more"> -->
+            <div class="dot custom-pagination">
+                <span class="dot-item active"></span>
+                <span class="dot-item d0"></span>
+            </div>
+            <a class="zhiding" href=""></a>
+            <a class="lianxi" href=""></a>
+
 
         </div>
 
         <!-- 婚纱礼服 -->
         <div class="dress">
-            <div class="dress-c w">
+            <div class="dress-c w swiper-container1">
                 <div class="dress-title">
                     <p class="title-t">婚纱礼服</p>
                     <p class="title-b">Wedding Dress</p>
                 </div>
 
-                <ul class="nav">
+                <ul class="nav custom-pagination ">
                     <li class="nav-item">
-                        <a class="" href="#">新品/NEW</a>
+                        新品/NEW
+                        <!-- <a class="" href="#">新品/NEW</a> -->
 
                     </li>
                     <li class="nav-item">
-                        <a href="#">2018春夏</a>
+                        2018春夏
+                        <!-- <a href="#">2018春夏</a> -->
 
                     </li>
                     <li class="nav-item">
-                        <a href="#">珠宝配饰</a>
+                        珠宝配饰
+                        <!-- <a href="#">珠宝配饰</a> -->
 
                     </li>
                     <li class="nav-item">
-                        <a href="#">专属定制</a>
+                        专属定制
+                        <!-- <a href="#">专属定制</a> -->
 
                     </li>
 
                 </ul>
 
                 <!-- 四张婚纱图片 -->
-                <ul class="dre clr">
-                    <li class="dre-item"></li>
-                    <li class="dre-item"></li>
-                    <li class="dre-item"></li>
-                    <li class="dre-item"></li>
-                </ul>
+                <div class="dress-pic swiper-wrapper">
+                    <ul class="dre clr swiper-slide">
+                        <li class="dre-item"></li>
+                        <li class="dre-item"></li>
+                        <li class="dre-item"></li>
+                        <li class="dre-item"></li>
+                    </ul>
+                    <ul class="dre clr swiper-slide ">
+                        <li class="dre-item2"></li>
+                        <li class="dre-item2"></li>
+                        <li class="dre-item2"></li>
+                        <li class="dre-item2"></li>
+                    </ul>
+                    <ul class="dre clr swiper-slide">
+                        <li class="dre-item3"></li>
+                        <li class="dre-item3"></li>
+                        <li class="dre-item3"></li>
+                        <li class="dre-item3"></li>
+                    </ul>
+                    <ul class="dre clr swiper-slide">
+                        <li class="dre-item4"></li>
+                        <li class="dre-item4"></li>
+                        <li class="dre-item4"></li>
+                        <li class="dre-item4"></li>
+                    </ul>
+                </div>
                 <a class="more" href="">MORE</a>
 
             </div>
@@ -307,5 +333,6 @@
         </div>
     </div>
 </body>
+
 
 </html>

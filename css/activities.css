@@ -135,6 +135,16 @@
     line-height: 1.5;
 }
 
+.swiper-container .swiper-wraper {
+    width: 200%;
+    height: auto;
+    display: flex;
+}
+
+.swiper-container .swiper-wraper .swiper-slide {
+    width: 50%;
+}
+
 
 /* 页码 */
 
@@ -217,14 +227,19 @@
         padding-left: 0;
     }
     .act .page-c {
-        width: 64px;
+        width: 80px;
+        position: relative;
     }
     .act .page1 {
-        /* position: relative; */
-        /* left: 50%; */
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .act .page2 {
-        /* position: relative; */
-        /* left: 55%; */
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

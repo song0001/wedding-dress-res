@@ -7,6 +7,7 @@
 .banner {
     width: 100%;
     /* height: 720px; */
+    position: relative;
 }
 
 .dress {
@@ -35,15 +36,14 @@
 
 /* banner样式 */
 
-
-/* .banner .swiper-wrapper {
+.banner .swiper-wrapper {
     width: 200%;
     height: 100%;
 }
 
 .banner .swiper-wrapper .swiper-slide {
     width: 50%;
-} */
+}
 
 .banner .swiper-wrapper img {
     width: 100%;
@@ -68,7 +68,7 @@
 }
 
 .banner .arr.arr-l {
-    left: 15%;
+    left: 10%;
     top: 50%;
     transform: translateY(-50%);
     background: url(../img/index-img/arr-l.png) no-repeat center;
@@ -76,7 +76,7 @@
 }
 
 .banner .arr.arr-r {
-    right: 15%;
+    right: 10%;
     top: 50%;
     transform: translateY(-50%);
     background: url(../img/index-img/arr-r.png) no-repeat center;
@@ -103,6 +103,7 @@
     width: 49px;
     height: 18px;
     margin-left: -25px;
+    z-index: 4;
 }
 
 .banner .dot .dot-item {
@@ -120,6 +121,25 @@
 .banner .dot .dot-item:hover {
     border: 5px solid #6c6c6c;
     background-color: #fff;
+}
+
+.banner .dot .dot-item.active {
+    border: 5px solid #6c6c6c;
+    background-color: #fff;
+}
+
+.dress .nav-item.act {
+    color: #b9ab77;
+}
+
+.swiper-button-next::after,
+.swiper-container-rtl .swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
 }
 
 .banner .zhiding {
@@ -148,8 +168,8 @@
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 .dress .dress-title .title-t {
@@ -164,13 +184,37 @@
 
 .dress .nav {
     margin: 0 auto;
+    width: 80%;
+    /* width: fit-content; */
+    /* display: flex;
+    justify-content: space-between; */
+    height: 80px;
+    cursor: pointer;
+}
+
+.dress .nav .nav-item {
     width: fit-content;
-    height: 16px;
-    margin-bottom: 56px;
+    height: 40px;
+    border-radius: 0;
+    background-color: #fff;
+    opacity: 1;
 }
 
 .dress .nav-item {
-    line-height: 16px;
+    line-height: 40px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    color: #b9ab77;
+    outline: none;
+    border: none;
+}
+
+.dress .nav {
+    width: 50%!important;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -190,13 +234,27 @@
 
 /* 婚纱图片样式 */
 
+.dress .dress-pic {
+    display: flex;
+    width: 400%;
+}
+
 .dress .dre {
     width: 100%;
     height: 360px;
     margin-bottom: 60px;
 }
 
-.dress .dre .dre-item {
+
+/* .swiper-pagination-bullet {
+    width: 80px;
+    height: 80px;
+} */
+
+.dress .dre .dre-item,
+.dress .dre .dre-item2,
+.dress .dre .dre-item3,
+.dress .dre .dre-item4 {
     float: left;
     width: 270px;
     height: 100%;
@@ -216,9 +274,60 @@
     background: url(../img/index-img/wedding3.jpg) no-repeat center;
 }
 
-.dress .dre .dre-item:last-child {
+.dress .dre .dre-item:nth-child(4) {
     margin-right: 0;
     background: url(../img/index-img/wedding4.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item2:nth-child(1) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-5.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item2:nth-child(2) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-6.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item2:nth-child(3) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-7.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item2:nth-child(4) {
+    margin-right: 0;
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-8.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item3:nth-child(1) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-3.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item3:nth-child(2) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-4.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item3:nth-child(3) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-5.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item3:nth-child(4) {
+    margin-right: 0;
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-7.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item4:nth-child(1) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-5.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item4:nth-child(2) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-8.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item4:nth-child(3) {
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-7.jpg) no-repeat center;
+}
+
+.dress .dre .dre-item4:nth-child(4) {
+    margin-right: 0;
+    background: url(http://www.bufantec.com/site/hunsha/static/img/WeddingDress-2.jpg) no-repeat center;
 }
 
 
@@ -437,23 +546,35 @@
         font-size: 13px;
     }
     .dress .nav {
-        width: 100%;
+        width: 90%!important;
         height: auto;
         display: flex;
         justify-content: space-between;
     }
-    .nav .nav-item {
+    .dress .nav .nav-item {
         margin-right: 0;
         font-size: 13px;
     }
-    .dress .dre .dre-item {
-        width: 48%;
-        height: 270px;
+    .dress .dre {
+        height: auto;
     }
-    .dress .dre .dre-item:nth-child(2) {
+    .dress .dre .dre-item,
+    .dress .dre .dre-item2,
+    .dress .dre .dre-item3,
+    .dress .dre .dre-item4 {
+        width: 48%;
+        height: 230px;
+    }
+    .dress .dre .dre-item:nth-child(2),
+    .dress .dre .dre-item2:nth-child(2),
+    .dress .dre .dre-item3:nth-child(2),
+    .dress .dre .dre-item4:nth-child(2) {
         margin-right: 0;
     }
-    .dress .dre .dre-item:nth-child(2n+1) {
+    .dress .dre .dre-item:nth-child(2n+1),
+    .dress .dre .dre-item2:nth-child(2n+1),
+    .dress .dre .dre-item3:nth-child(2n+1),
+    .dress .dre .dre-item4:nth-child(2n+1) {
         margin-right: 10px;
     }
     .jew .jews {
@@ -491,6 +612,9 @@
     }
     .activities ul li {
         width: 25%;
+    }
+    .dress .more {
+        margin-bottom: 50px;
     }
     .activities .more {
         margin: 30px auto;
