@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/dress.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.1/jquery.js"></script>
     <script src="js/common.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
 </head>
 
 <body>
@@ -124,19 +128,26 @@
         </div>
         <!-- 婚纱展示 -->
         <div class="dress">
-            <div class="dress-c clr">
+            <div class="dress-c clr swiper-container">
                 <div class="new">新品/NEW</div>
                 <div class="old">往季</div>
-                <ul class="dre clr">
-                    <li class="dre-item"></li>
-                    <li class="dre-item"></li>
-                    <li class="dre-item"></li>
-                    <li class="dre-item"></li>
-                    <li class="dre-item"></li>
-                    <li class="dre-item"></li>
+                <ul class="dre clr swiper-wrapper ">
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <li class="dre-item swiper-slide"></li>
+                    <!-- <li class="dre-item swiper-slide"></li> -->
                 </ul>
-                <a class="arr arr-l" href=""> </a>
-                <a class="arr arr-r" href=""> </a>
+                <div class="arr arr-l" href=""> </div>
+                <div class="arr arr-r" href=""> </div>
+                <div class="swiper-pagination"></div>
                 <a class="more" href="">MORE</a>
             </div>
         </div>
@@ -155,6 +166,21 @@
             </div>
         </div>
     </div>
+    <script>
+        $(function() {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 5.8,
+                navigation: {
+                    nextEl: '.arr-r',
+                    prevEl: '.arr-l',
+                },
+                // pagination: {
+                //     el: '.swiper-pagination',
+                //     clickable: true,
+                // },
+            });
+        })
+    </script>
 </body>
 
 </html>

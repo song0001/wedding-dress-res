@@ -165,13 +165,13 @@
     position: absolute;
     top: 170px;
     left: 0;
-    width: 100%;
+    width: 200%;
     height: 220px;
 }
 
 .dress .dre .dre-item {
     float: left;
-    width: 160px;
+    width: 160px !important;
     height: 220px;
     margin-right: 48px;
     /* background-color: red; */
@@ -200,9 +200,30 @@
     background: url(../img/dress-img/d5.png) no-repeat center;
 }
 
-.dress .dre .dre-item:last-child {
+.dress .dre .dre-item:nth-child(6) {
     background: url(../img/dress-img/d6.png) no-repeat center;
+    /* margin-right: 0; */
+}
+
+.dress .dre .dre-item:last-child {
     margin-right: 0;
+    background: url(../img/dress-img/d1.png) no-repeat center;
+}
+
+.dress .dre .dre-item:nth-child(10) {
+    background: url(../img/dress-img/d3.png) no-repeat center;
+}
+
+.dress .dre .dre-item:nth-child(9) {
+    background: url(../img/dress-img/d4.png) no-repeat center;
+}
+
+.dress .dre .dre-item:nth-child(8) {
+    background: url(../img/dress-img/d5.png) no-repeat center;
+}
+
+.dress .dre .dre-item:nth-child(7) {
+    background: url(../img/dress-img/d6.png) no-repeat center;
 }
 
 .dress .dress-c .more {
@@ -211,6 +232,14 @@
     left: 50%;
     margin-left: -76px;
     margin-bottom: 60px;
+}
+
+.arr.arr-l {
+    left: 0;
+}
+
+.arr.arr-r {
+    right: 0;
 }
 
 

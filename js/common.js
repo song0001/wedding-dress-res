@@ -21,19 +21,14 @@ $(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() > 20) {
             $('.header-m,.header').css({
-                    "background": "#fbfbfb",
-                    'height': '60px',
-                    "position": "fixed",
-                    "boxShadow": "0 1px 10px rgba(0, 0, 0, 0.3)"
-                })
-                // $('.veronica,.header .nav').css({
-                //     'height': 60,
-
-
-            // })
-            // $('.header .nav').css({
-            //     'lineHeight': 60
-            // })
+                "background": "#fbfbfb",
+                'height': '70px',
+                "position": "fixed",
+                "boxShadow": "0 1px 10px rgba(0, 0, 0, 0.3)",
+            })
+            $('.veronica').css({
+                "marginTop": 17
+            })
 
         }
         if ($(window).scrollTop() < 10) {
