@@ -226,7 +226,8 @@
     .header-m .header-c {
         display: flex;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+        height: 100%;
     }
     .header-m .nav {
         height: calc(100vh - 80px) !important;

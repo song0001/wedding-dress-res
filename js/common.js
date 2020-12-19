@@ -19,6 +19,13 @@ $(function() {
     });
     // 滚动导航栏
     $(window).scroll(function() {
+        if ($(window).scrollTop() < 10) {
+            $('.header-m,.header').css({
+                'height': '80px',
+                "width": "100%",
+                "position": "relative"
+            })
+        }
         if ($(window).scrollTop() > 20) {
             $('.header-m,.header').css({
                 "background": "#fbfbfb",
@@ -29,15 +36,8 @@ $(function() {
             $('.veronica').css({
                 "marginTop": 17
             })
+        }
 
-        }
-        if ($(window).scrollTop() < 10) {
-            $('.header-m,.header').css({
-                'height': '80px',
-                "width": "100%",
-                "position": "relative"
-            })
-        }
     })
 
 
